@@ -21,7 +21,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     RegisterClassW(&wc);
     CreateWindowW(wc.lpszClassName, L"Menu",
                   WS_OVERLAPPEDWINDOW | WS_VISIBLE,
-                  100, 100, 200, 150, 0, 0, hInstance, 0);
+                  100, 100, 350, 250, 0, 0, hInstance, 0);
 
     while (GetMessage(&msg, NULL, 0, 0)) {
     

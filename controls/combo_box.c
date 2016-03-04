@@ -73,7 +73,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
              
                   LRESULT sel = SendMessage(hwndCombo, CB_GETCURSEL, 0, 0);
                   SetWindowTextW(hwndStatic, items[sel]);
-                  SetFocus(hwnd);
              }
              break;
 

@@ -41,7 +41,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
         case WM_CREATE:
     
             LoadMyImage();
-            hsti = CreateWindowW(L"static", L"", 
+            hsti = CreateWindowW(L"Static", L"", 
                 WS_CHILD | WS_VISIBLE | SS_BITMAP,
                 5, 5, 300, 300, hwnd, (HMENU) 1, NULL, NULL);
 

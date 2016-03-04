@@ -46,7 +46,7 @@ All reason aside, I just can't deny, love the guy\n\
 
         case WM_CREATE:
       
-            CreateWindowW(L"static", lyrics, 
+            CreateWindowW(L"Static", lyrics, 
                 WS_CHILD | WS_VISIBLE | SS_LEFT,
                 20, 20, 300, 230, 
                 hwnd, (HMENU) 1, NULL, NULL);

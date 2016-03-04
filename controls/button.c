@@ -37,11 +37,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
 
         case WM_CREATE:
 
-            CreateWindowW(L"button", L"Beep",
+            CreateWindowW(L"Button", L"Beep",
                 WS_VISIBLE | WS_CHILD ,
                 20, 50, 80, 25, hwnd, (HMENU) ID_BEEP, NULL, NULL);
 
-            CreateWindowW(L"button", L"Quit",
+            CreateWindowW(L"Button", L"Quit",
                 WS_VISIBLE | WS_CHILD ,
                 120, 50, 80, 25, hwnd, (HMENU) ID_QUIT, NULL, NULL);
             break;

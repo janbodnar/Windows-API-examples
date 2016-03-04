@@ -38,7 +38,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
   
         case WM_CREATE:
 
-            CreateWindowW(L"button", L"Show Title",
+            CreateWindowW(L"Button", L"Show Title",
                 WS_VISIBLE | WS_CHILD | BS_CHECKBOX,
                 20, 20, 185, 35, hwnd, (HMENU) 1, 
                 NULL, NULL);

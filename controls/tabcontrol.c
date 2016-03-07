@@ -7,6 +7,7 @@
 #define BTN_ADD 3
 #define BTN_DEL 4
 #define BTN_CLR 5
+#define MAX_TAB_LEN 15
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 HWND hTab, hEdit;
@@ -41,7 +42,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
     WPARAM wParam, LPARAM lParam) {
 
     TCITEMW tie;
-    wchar_t text[250];
+    wchar_t text[4];
     LRESULT count, id;
     INITCOMMONCONTROLSEX icex;
 
@@ -58,6 +59,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg,
 
             hEdit = CreateWindowW(WC_EDITW, NULL, WS_CHILD | WS_VISIBLE | WS_BORDER,
                 250, 20, 100, 25, hwnd, (HMENU) ID_EDIT, NULL, NULL);
+
+            SendMessage(hEdit, EM_SETLIMITTEXT, MAX_TAB_LEN, 0);
   
             CreateWindowW(WC_BUTTONW, L"Add", WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
                 250, 50, 100, 25, hwnd, (HMENU) BTN_ADD, NULL, NULL);

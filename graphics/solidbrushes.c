@@ -17,7 +17,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     wc.hCursor       = LoadCursor(0, IDC_ARROW);
 
     RegisterClassW(&wc);
-    CreateWindowW(wc.lpszClassName, L"Solid Brush",
+    CreateWindowW(wc.lpszClassName, L"Solid brushes",
           WS_OVERLAPPEDWINDOW | WS_VISIBLE,
           100, 100, 220, 240, NULL, NULL, hInstance, NULL);
 

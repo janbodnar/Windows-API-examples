@@ -5,5 +5,5 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                
     MessageBoxW(NULL, szCmdLine, L"Title", MB_OK);
 
-    return EXIT_SUCCESS;
+    return 0;
 }

@@ -11,7 +11,12 @@ int wmain(int argc, wchar_t **argv) {
             GetLastError());
     }
  
-    WriteConsoleW(std, argv[1], wcslen(argv[1]), cChars, NULL);
+    if (argv[1]) {
+    
+        WriteConsoleW(std, argv[1], wcslen(argv[1]), cChars, NULL);
+    }
+    
+    CloseHandle(std);
  
-    return EXIT_SUCCESS;
+    return 0;
 }

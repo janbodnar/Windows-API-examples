@@ -14,7 +14,12 @@ int _tmain(int argc, TCHAR *argv[]) {
             GetLastError());
     }  
         
-    WriteConsole(std, argv[1], _tcslen(argv[1]), cChars, NULL);
+    if (argv[1]) {
+    
+        WriteConsole(std, argv[1], _tcslen(argv[1]), cChars, NULL);
+    }
+    
+    CloseHandle(std);
 
-    return EXIT_SUCCESS;
+    return 0;
 }

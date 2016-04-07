@@ -7,7 +7,7 @@ int wmain(void) {
   
     GetSystemTime(&st);
   
-    wprintf(L"The system time is: %02d:%02d:%02d\n", 
+    wprintf(L"The UTC time is: %02d:%02d:%02d\n", 
         st.wHour, st.wMinute, st.wSecond);
 
     return 0;
